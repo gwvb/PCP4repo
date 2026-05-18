@@ -24,16 +24,3 @@ class StandardScaler(BaseEstimator, TransformerMixin):
 
     def transform(self, X, y=None):
         return (X - X.mean(keepdims=True)) / (X.std(keepdims=True)
-
-
-class Variance(TransformerMixin, BaseEstimator):
-    """Returns the variance of the data."""
-
-    def __init__(self):
-        pass
-
-    def fit(self, X, y=None):
-        return self
-
-    def transform(self, X, y=None):
-        return np.var(X, axis=0)
