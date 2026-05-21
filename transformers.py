@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.base import TransformerMixin, BaseEstimator
 
 
-class StandardScaler(BaseEstimator, TransformerMixin):
+class Scaler(BaseEstimator, TransformerMixin):
     """Scale the data to given mean and std.
 
     Parameters
